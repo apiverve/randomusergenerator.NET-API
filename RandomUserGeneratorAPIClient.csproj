@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.RandomUserGenerator</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/randomusergenerator</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Random User Generator is a simple tool for generating random user data. It returns the user's name, email, and more.</Description>
+    <RepositoryUrl>https://github.com/apiverve/randomusergenerator-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>random user generator; random user data; random user generator api; random user data api; random user generator tool; random user data tool; random user generator software; random user data software; random user generator service; random user data service; random user generator library; random user data library; random user generator sdk; random user data sdk; random user generator code; random user data code; random user generator script; random user data script; random user generator program; random user data program; random user generator application; random user data application; random user generator app; random user data app; random user generator utility; random user data utility; random user generator helper; random user data helper; random user generator helper tool; random user data helper tool; random user generator helper software; random user data helper software; random user generator helper service; random user data helper service; random user generator helper library; random user data helper library; random user generator helper sdk; random user data helper sdk; random user generator helper code; random user data helper code; random user generator helper script; random user data helper script; random user generator helper program; random user data helper program; random user generator helper application; random user data helper application; random user generator helper app; random user data helper app; random user generator helper tool; random user data helper tool; random user generator helper utility; random user data helper utility; random user generator helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

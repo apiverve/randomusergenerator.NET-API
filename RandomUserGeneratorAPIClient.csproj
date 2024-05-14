@@ -1,38 +1,69 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Nullable>enable</Nullable>
+    <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>APIVerve.API.RandomUserGenerator</Title>
-    <Version>1.0.0</Version>
+    <Version>1.0.5</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <IncludeContentInPack>true</IncludeContentInPack>
+
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <PackageProjectUrl>https://apiverve.com/marketplace/api/randomusergenerator</PackageProjectUrl>
+    <PackageProjectUrl>https://apiverve.com/?utm_source=nuget</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
     <Description>Random User Generator is a simple tool for generating random user data. It returns the user's name, email, and more.</Description>
-    <RepositoryUrl>https://github.com/apiverve/randomusergenerator-NET</RepositoryUrl>
+    <RepositoryUrl>https://github.com/apiverve/randomusergenerator.NET-API</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>random user generator; random user data; random user generator api; random user data api; random user generator tool; random user data tool; random user generator software; random user data software; random user generator service; random user data service; random user generator library; random user data library; random user generator sdk; random user data sdk; random user generator code; random user data code; random user generator script; random user data script; random user generator program; random user data program; random user generator application; random user data application; random user generator app; random user data app; random user generator utility; random user data utility; random user generator helper; random user data helper; random user generator helper tool; random user data helper tool; random user generator helper software; random user data helper software; random user generator helper service; random user data helper service; random user generator helper library; random user data helper library; random user generator helper sdk; random user data helper sdk; random user generator helper code; random user data helper code; random user generator helper script; random user data helper script; random user generator helper program; random user data helper program; random user generator helper application; random user data helper application; random user generator helper app; random user data helper app; random user generator helper tool; random user data helper tool; random user generator helper utility; random user data helper utility; random user generator helper</PackageTags>
+    <PackageTags>random user generator; random user data; random user generator api; random user data api; random user generator tool</PackageTags>
     <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <PackageIcon>favicon@128.png</PackageIcon>
+    <BaseOutputPath>.\bin</BaseOutputPath>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <PackageId>APIVerve.API.RandomUserGenerator</PackageId>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <None Remove="LICENSE" />
+    <None Remove="Readme.md" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="LICENSE">
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Media\favicon@128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Update="Readme.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

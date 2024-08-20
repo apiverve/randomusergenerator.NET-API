@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new randomusergeneratorQueryOptions {
+var queryOptions = new RandomUserGeneratorQueryOptions {
   count = 1
 };
 ```
@@ -95,18 +95,19 @@ if(response.error != null) {
   "error": null,
   "data": [
     {
-      "id": "6d5c9f84-75b9-4b0d-a462-8f77712dcf0d",
-      "name": "Kendra Reilly",
+      "id": "259364d7-ec79-4999-ba2a-1ae72654cbad",
+      "name": "Adrian Braun",
       "gender": "Male",
-      "username": "Marlin16",
-      "email": "Vinnie_Schowalter@gmail.com",
-      "password": "NsOxuNDs_a_5R_p",
-      "registered": "2023-10-24T10:02:59.857Z",
-      "phone": "(943) 873-2068 x512",
-      "cell": "535.765.2400 x888",
-      "birthdate": "1972-12-17T20:46:12.771Z"
+      "username": "Jonathan_Wolf6",
+      "email": "Garrick.Kuhlman@gmail.com",
+      "password": "kYCJBgvoBre30v6",
+      "registered": "2024-06-22T14:20:12.38Z",
+      "phone": "1-837-688-7413 x973",
+      "cell": "(607) 226-6671 x881",
+      "birthdate": "1973-11-11T06:30:36.969Z"
     }
-  ]
+  ],
+  "code": 200
 }
 ```
 

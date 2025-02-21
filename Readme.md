@@ -32,9 +32,9 @@ From within Visual Studio:
 
 1. Open the Solution Explorer.
 2. Right-click on a project within your solution.
-3. Click on Manage NuGet Packages...
+3. Click on Manage NuGet Packages..
 4. Click on the Browse tab and search for "APIVerve.API.RandomUserGenerator".
-5. Click on the APIVerve.API.RandomUserGenerator package, select the appropriate version in the right-tab and click Install.
+5. Click on the APIVerve.API.RandomUserGenerator package, click Install.
 
 
 ---
@@ -95,16 +95,16 @@ if(response.error != null) {
   "error": null,
   "data": [
     {
-      "id": "a4514d91-4c22-46c5-8dd7-5d229d76d14b",
-      "name": "Elijah Boyle",
+      "id": "04e47b46-c078-4d51-a7e9-17708ebea53e",
+      "name": "Yvette Greenholt",
       "gender": "Female",
-      "username": "Angela83",
-      "email": "Kolby_Mitchell76@yahoo.com",
-      "password": "DvegUS6JJgYxd5k",
-      "registered": "2024-02-20T17:53:18.103Z",
-      "phone": "228-578-5845",
-      "cell": "(588) 956-8258 x787",
-      "birthdate": "1969-03-28T02:07:58.378Z"
+      "username": "Julien.Kutch",
+      "email": "Jude_Kuhic@yahoo.com",
+      "password": "M90Tqd9_5_9tbuE",
+      "registered": "2024-12-06T20:36:01.485Z",
+      "phone": "832.718.9991 x55356",
+      "cell": "(344) 512-8916 x36142",
+      "birthdate": "1958-06-28T06:23:25.829Z"
     }
   ],
   "code": 200
@@ -133,7 +133,7 @@ All usage of the APIVerve website, API, and services is subject to the [APIVerve
 ## License
 Licensed under the The MIT License (MIT)
 
-Copyright (&copy;) 2024 APIVerve, and Evlar LLC
+Copyright (&copy;) 2025 APIVerve, and EvlarSoft LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
